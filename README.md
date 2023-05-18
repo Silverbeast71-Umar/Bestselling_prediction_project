@@ -1,9 +1,9 @@
 # Bestselling_prediction_project
 
-Yelp Best-Selling Dish Analyzer
+**Yelp Best-Selling Dish Analyzer**
 This Python application analyzes Yelp restaurant reviews to identify the best-selling dishes for restaurants in a specific location and for different cuisines.
 
-Requirements
+**Requirements**
 Python 3
 Pandas
 Numpy
@@ -14,7 +14,7 @@ Yelp Fusion API key
 Data Source
 This application uses the Yelp Fusion API to fetch restaurant data and reviews.
 
-Overview of the Code
+**Overview of the Code**
 The code is broken down into different sections:
 
 Importing necessary libraries: This includes pandas, numpy, requests, scikit-learn, nltk, and matplotlib.
@@ -23,7 +23,7 @@ Defining necessary functions: Functions for fetching Yelp data, analyzing review
 
 Main program execution: Here, we call the defined functions for a given location and a set of cuisines and their associated popular dishes. The results are saved as CSV files and a bar plot representing the best-selling dishes for each cuisine is created.
 
-Detailed Breakdown of the Code
+***Detailed Breakdown of the Code***
 Importing necessary libraries: Libraries necessary for data manipulation, sentiment analysis, machine learning, API requests, and data visualization are imported.
 
 Defining necessary functions:
@@ -36,7 +36,7 @@ analyze_reviews(location, term, categories, dish_names): This function analyzes 
 
 Main program execution: In the main execution of the program, we define the location, term, and cuisines with their associated popular dishes. We then call analyze_reviews function for each cuisine, and save the resulting DataFrames as CSV files. We also create a bar plot for the best-selling dishes using plot_best_selling_dishes function.
 
-Execution
+**Execution**
 To run the script, follow the steps:
 
 Replace the api_key placeholder with your Yelp Fusion API key.
@@ -45,5 +45,5 @@ Run the script.
 Output
 The script will create a CSV file for each cuisine, containing the restaurant reviews and the best-selling dishes. It will also create a PNG file for each cuisine, containing a bar plot of the best-selling dishes.
 
-Note
+**Note**
 Make sure to handle API request errors and to respect Yelp's API usage guidelines when using this script. The current script does not implement error handling for simplicity. Also, sentiment analysis and dish popularity determination are based on simple methods and may not be accurate. For more precise results, consider using more sophisticated natural language processing methods.
